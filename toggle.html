@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Document</title>
+    <style>
+        .toggle{
+            background-color:#444;
+            border-radius: 25px;
+            padding: 7px;
+            font-family: arial;
+            color: white;
+        }
+        .toggle .on{
+            display: none;
+        }
+        input:checked+.on+.dot+.off{
+             display: none;
+             
+        }
+        input:checked+.on{
+            display: inline;
+            color: lightgreen;
+
+        }
+        .toggle .dot{
+            font-size: 36px;
+        }
+        input:checked+.on+.dot{
+            color: lightgreen;
+        }
+        .toggle input{
+            display: none;
+            
+        }
+        .off{
+            color: red;
+        }
+       
+        
+    </style>
+</head>
+<body>
+    <label class="toggle">
+        <input type="checkbox">
+        <span class="on">ON</span>
+        <span class="dot">●</span>
+        <span class="off">OFF</span> 
+       
+    </label>
+</body>
+</html>
